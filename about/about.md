@@ -8,8 +8,6 @@ A letter from Jason Kuo:
 
 My life philosophy is quite simple - Live. I strive to live my life by doing and experiencing all the wonders that life presents. Whether or not it involves coding new applications or traveling to peaks of mountains, there is no greater joy than the sense of growth.
 
-As an investor, I've accumulated over $100,000 capital gains from real-estate/portfolio investments.
-
 As an working professional, I've accumulated over 10,000 hours of operations management and business analysis primarily in a manufacture and supply chain industry.
 
 Now as a software engineer, I've accumulated over 1,000 hours of coding and I don't plan on stopping there.

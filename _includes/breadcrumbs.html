@@ -1,0 +1,24 @@
+<!-- source: https://simpleit.rocks/how-to-create-breadcrumbs-with-hierarchical-categories-in-jekyll/ -->
+
+{% assign categories = ""%}
+  {% if include.path contains "posts" %}
+    {% comment %} posts are like /docs/python/_posts/2016-06-06-foobar.md {% endcomment %}
+    {% assign categories = include.path | split:"/" | pop %}
+  {% else %}
+    <!-- {% comment %} pages are like /docs/python/index.md {% endcomment %} -->
+    {% assign categories = include.path | split:"/" | pop  %}
+  {% endif %}
+{% assign route="" %}
+
+<a href="/"><img class="profile-breadcrumb-thumbnail" src="{{site.profilepicture}}"></a>
+  {% for category in categories %}
+  <span class="prompt"> / </span>
+  {% assign route = route | append: '/' | append: category %}
+    {% if forloop.last and category == "_posts" %}
+      {{ include.title }}
+      {% elsif forloop.last %}
+      {{ category }}
+    {% else %}
+      <a href="{{ route }}">{{ category }}</a>
+    {% endif %}
+  {% endfor %}
