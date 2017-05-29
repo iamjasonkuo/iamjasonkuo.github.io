@@ -4,7 +4,7 @@ title: Hyperspace by HTML5 UP
 ---
 
 <!-- Sidebar -->
-{% include sidebar.html %}
+
 
 <!-- Wrapper -->
 <div id="wrapper">
@@ -29,7 +29,7 @@ title: Hyperspace by HTML5 UP
 				<h2>The Layover App</h2>
 				<p>A stealth project aimed to solve the greatest problem known to travelers' all across the globe - the layover. Stay in touch for more updates on the project. </p>
 				<ul class="actions">
-					<li><a href="#" class="button">Learn more</a></li>
+					<li><a href="{{site.baseurl}}thelayover" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
@@ -38,7 +38,7 @@ title: Hyperspace by HTML5 UP
 		<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
 		<div class="content">
 			<div class="inner">
-				<h2>Feugiat consequat</h2>
+				<h2>Eventscore</h2>
 				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 				<ul class="actions">
 					<li><a href="#" class="button">Learn more</a></li>
