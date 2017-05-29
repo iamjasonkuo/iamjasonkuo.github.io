@@ -1,33 +1,45 @@
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
+# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Jason Kuo
+title: Hyperspace
 email: iamjasonkuo@gmail.com
-description: Jason is trying to grow up, but he spends his time learning and building new things.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  iamjasonkuo
-twitter_username:  iamjasonkuo
-linkedin_username:  jsonkuo-1
-instagram_username:  jsonkuo
-profilepicture: "https://lh3.googleusercontent.com/-Bkq0OPj6NF0/V3XfkDUDJ_I/AAAAAAAAAf4/gM2eyMwNOGk-WryxMYNScogkpsW6K9fZACEw/w280-h280-p/12391979_10152752220372325_5568904883088099267_n.jpg"
+phone: (626) 716-8834
+description: This is Jason's Website.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://iamjasonkuo.github.io" # the base hostname & protocol for your site
+
+# Social settings
+500px_url:
+facebook_url: https://facebook.com
+github_url: https://github.com/u/iamjasonkuo
+gitlab_url: https://gitlab.com/
+googleplus_url: https://plus.google.com/
+instagram_url: https://www.instagram.com/jsonkuo/
+linkedin_url: https://www.linkedin.com/in/jsonkuo-1/
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/
+
+github_username: iamjasonkuo
+linkedin_username: jsonkuo-1
+instagram_username: jsonkuo
+
+
 # Build settings
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
-exclude: # include files and folders you want to exlcude here
-  - Gemfile
-  - Gemfile.lock
+
+# Plugin: jekyll-seo-tag
+twitter:
+  username: iamjasonkuo
+# Add one or more of the following
+facebook:
+  app_id:
+  publisher:
+  admins:
+logo:
+google_site_verification:
