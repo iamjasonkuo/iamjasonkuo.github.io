@@ -211,3 +211,58 @@ pre {
     padding-top: 5px;
   }
 }
+
+
+/**
+ * Forms
+ */
+form {
+  margin: 0 0 $spacing-unit 0;
+  .field {
+    margin: 0 0 $spacing-unit 0;
+    label {
+      margin-top: $spacing-unit * -0.75;
+    }
+    &:first-child {
+      label {
+        margin-top: 0;
+      }
+    }
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+label {
+  display: block;
+  // text-transform: uppercase;
+ }
+
+// input[type="text"],
+// input[type="password"],
+// input[type="email"],
+// input[type="tel"],
+// select,
+// textarea {
+//   background: $grey-color;
+//   // border-radius: _size(border-radius);
+//   border: none;
+//   border: solid 2px $grey-color;
+//   color: inherit;
+//   display: block;
+//   outline: 0;
+//   padding: 0 1em;
+//   text-decoration: none;
+//   width: 100%;
+//
+//   &:invalid {
+//     box-shadow: none;
+//   }
+//
+//   &:focus {
+//     border-color: desaturate(lighten($brand-color, 6), 3);
+//   }
+// }

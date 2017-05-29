@@ -3,10 +3,14 @@
   <div class="wrapper">
 
     <!-- <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
-    <h2 class="footer-heading">{% include breadcrumbs.html path=page.path title=page.title %}</h2>
+    <h2 class="footer-heading">
+      {% include breadcrumbs.html path=page.path title=page.title %}
+    </h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
+        <h2>Get in touch</h2>
+        <p>{{ site.description | escape }}</p>
         <ul class="contact-list">
           <li>
             {% if site.author %}
@@ -14,14 +18,36 @@
             {% else %}
               {{ site.title | escape }}
             {% endif %}
-            </li>
+          </li>
             {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </li>
             {% endif %}
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
+        <form method="post" action="#">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4"></textarea>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Send Message" /></li>
+          </ul>
+        </form>
+      </div>
+
+      <div class="footer-col footer-col-3">
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -45,7 +71,7 @@
 
           {% if site.instagram_username %}
           <li>
-            <a href="https://linkedin.com/in/{{ site.instagram_username }}">
+            <a href="https://www.instagram.com/{{ site.instagram_username }}">
               <i class="fa fa-instagram icon" style="color: #828282"></i> <span class="username"> {{ site.instagram_username }} </span>
             </a>
           </li>
@@ -53,12 +79,6 @@
 
         </ul>
       </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
     </div>
-
   </div>
-
 </footer>
