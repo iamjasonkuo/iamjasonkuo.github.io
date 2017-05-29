@@ -1,187 +1,25 @@
 ---
-layout: default
-title: Hyperspace by HTML5 UP
+layout: page
+title:  The Layover App
+date:   2017-05-19 12:40:41 -0700
+categories:
 ---
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-<!-- Sidebar -->
-{% include sidebar.html %}
+To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-<!-- Wrapper -->
-<div id="wrapper">
+Jekyll also offers powerful support for code snippets:
 
-<!-- Intro -->
-<section id="intro" class="wrapper style1 fullscreen fade-up">
-	<div class="inner">
-		<h1>Jason is trying to grow up...</h1>
-		<p> But he spends his time learning and building new things.</p>
-		<ul class="actions">
-			<li><a href="#one" class="button scrolly">Learn more</a></li>
-		</ul>
-	</div>
-</section>
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
 
-<!-- One -->
-<section id="one" class="wrapper style2 spotlights">
-	<section>
-		<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-		<div class="content">
-			<div class="inner">
-				<h2>Sed ipsum dolor</h2>
-				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-				<ul class="actions">
-					<li><a href="#" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<section>
-		<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-		<div class="content">
-			<div class="inner">
-				<h2>Feugiat consequat</h2>
-				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-				<ul class="actions">
-					<li><a href="#" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<section>
-		<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-		<div class="content">
-			<div class="inner">
-				<h2>Ultricies aliquam</h2>
-				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-				<ul class="actions">
-					<li><a href="#" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-</section>
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-<!-- Two -->
-<section id="two" class="wrapper style3 fade-up">
-	<div class="inner">
-		<h2>What we do</h2>
-		<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-		<div class="features">
-			<section>
-				<span class="icon major fa-code"></span>
-				<h3>Lorem ipsum amet</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-			</section>
-			<section>
-				<span class="icon major fa-lock"></span>
-				<h3>Aliquam sed nullam</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-			</section>
-			<section>
-				<span class="icon major fa-cog"></span>
-				<h3>Sed erat ullam corper</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-			</section>
-			<section>
-				<span class="icon major fa-desktop"></span>
-				<h3>Veroeros quis lorem</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-			</section>
-			<section>
-				<span class="icon major fa-chain"></span>
-				<h3>Urna quis bibendum</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-			</section>
-			<section>
-				<span class="icon major fa-diamond"></span>
-				<h3>Aliquam urna dapibus</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-			</section>
-		</div>
-		<ul class="actions">
-			<li><a href="#" class="button">Learn more</a></li>
-		</ul>
-	</div>
-</section>
-
-<!-- Three -->
-<section id="three" class="wrapper style1 fade-up">
-	<div class="inner">
-		<h2>Get in touch</h2>
-		<p>I'm always interesting in learning more about others and thoughts. Feel free to drop a message. Promise, I don't <em>"byte"</em>.</p>
-		<div class="split style1">
-			<section>
-				<form method="post" action="https://formspree.io/{{site.email}}">
-					<div class="field half first">
-						<label for="name">Name</label>
-						<input type="text" name="name" id="name" />
-					</div>
-					<div class="field half">
-						<label for="email">Email</label>
-						<input type="text" name="_replyto" id="email" />
-					</div>
-					<div class="field">
-						<label for="message">Message</label>
-						<textarea name="message" id="message" rows="5"></textarea>
-					</div>
-					<ul class="actions">
-					<li>
-						<input type="submit" value="Send Message">
-					</li>
-					</ul>
-				</form>
-			</section>
-			<section>
-				<ul class="contact">
-					<li>
-						<h3>Email</h3>
-						<a href="#">{{ site.email }}</a>
-					</li>
-					<li>
-						<h3>Phone</h3>
-						<span>{{ site.phone }}</span>
-					</li>
-					<li>
-						<h3>Social</h3>
-						<ul class="icons">
-						{% if site.github_username %}
-							<li>
-								<a href="{{ site.github_url }}">
-									<i class="fa fa-github icon"></i> <span> {{ site.github_username }} </span>
-								</a>
-							</li>
-						{% endif %}
-						{% if site.linkedin_username %}
-							<li>
-								<a href="{{ site.linkedin_url }}">
-									<i class="fa fa-linkedin"></i> <span> {{ site.linkedin_username }} </span>
-								</a>
-							</li>
-						{% endif %}
-						{% if site.facebook_username %}
-							<li>
-								<a href="{{ site.facebook_url }}">
-									<i class="fa fa-facebook"></i> <span> {{ site.facebook_username }} </span>
-								</a>
-							</li>
-						{% endif %}
-						{% if site.twitter_username %}
-							<li>
-								<a href="{{ site.twitter_url }}">
-									<i class="fa fa-twitter"></i> <span> {{ site.twitter_username }} </span>
-								</a>
-							</li>
-						{% endif %}
-						{% if site.instagram_username %}
-							<li>
-								<a href="{{ site.instagram_url }}">
-									<i class="fa fa-instagram"></i> <span> {{ site.instagram_username }} </span>
-								</a>
-							</li>
-						{% endif %}
-						</ul>
-					</li>
-				</ul>
-			</section>
-		</div>
-	</div>
-</section>
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
