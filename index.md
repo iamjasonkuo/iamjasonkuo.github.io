@@ -20,6 +20,40 @@ title: Hyperspace by HTML5 UP
 	</div>
 </section>
 
+<!-- REFERENCE FOR LOOP POSTS
+<ul class="post-list">
+	{% for post in site.posts limit:5 %}
+		<li>
+			{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+			<span class="post-meta">{{ post.date | date: date_format }}</span>
+
+			<h2>
+				<a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+			</h2>
+		</li>
+	{% endfor %}
+</ul> -->
+
+<!-- TODO: for loop in projects folder isn't working; test if project specific meta is passing through.
+<section id="one" class="wrapper style2 spotlights">
+	{% for project in site.projects limit:3 %}
+		<section>
+			<a href="{{site.baseurl}}{{project.pathname}} class="image">
+				<img src="images/pic01.jpg" alt="" data-position="center center"
+			</a>
+			<div class="content">
+				<div class="inner">
+					<h2>{{project.title}}/h2>
+					<p>{{project.description}}</p>
+					<ul class="actions">
+						<li><a href="{{site.baseurl}}thelayover" class="button">Learn more</a></li>
+					</ul>
+				</div>
+			</div>			
+		</section>
+	{% endfor %}
+</section> -->
+
 <!-- One -->
 <section id="one" class="wrapper style2 spotlights">
 	<section>
