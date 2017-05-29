@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: resume
 title:  Resume
 permalink: /resume/
 ---
@@ -22,3 +22,101 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+
+
+
+
+Work Experience
+Lifefactory, Inc.
+position: Business Intelligence Manager
+primarily responsibility:
+-CEO's Primary point of contact for all analytical and data analysis regarding business health
+-Primary point of contact for all internal technical product management (integration of Netsuite, development/production workflow process build features, communications to all trading partners/3PLs)
+key accomplishments:
+-Successfully migrated, launch and scaled live production ERP system within 8 months
+-Increase utilization capacity by over 300% through reforming operations process flow via technology and process
+technology used: Netsuite, Microsoft Office Suite, Trello, Balsamiq, Qlik/Tableau/MicroStrategy, Shopify
+training: Netsuite Essentials Course, Netsuite SuiteAnalytics
+duration: approx. 4 years
+
+Punchfunder DBA Ludociti, LLC.
+position: Co-founder
+primarily responsibility:
+key accomplishments:
+technology used:
+training:
+duration:
+
+General Electric Aviation
+position: Analyst
+primarily responsibility:
+key accomplishments:
+technology used:
+training:
+duration:
+
+AXA Advisors
+position: Financial Planning & Analysis Intern
+primarily responsibility:
+key accomplishments:
+technology used:
+training:
+duration:
+
+Aflac
+position: Management Intern
+primarily responsibility:
+key accomplishments:
+technology used:
+training: Sales
+duration:
+
+
+Software Engineering Applications
+name: The Layover App
+description:
+key accomplishments:
+technology stack:
+
+name: Spacetionary
+description:
+key accomplishments:
+technology stack:
+
+name: Eventscore
+description:
+key accomplishments:
+technology stack:
+
+name: Hella Amazing Race
+description:
+key accomplishments:
+technology stack:
+
+name: Get Quoted
+description:
+key accomplishments:
+technology stack:
+
+
+
+Education
+name: University of California, Los Angeles
+degree: Economics Major, Urban Planning and Regional Studies Minors
+
+Supplemental Education
+name: Hack Reactor
+description:
+
+name: Shanghai Jiao Tong University
+description:
+
+
+
+Technical Skills
+
+
+Languages
+
+
+Interests
