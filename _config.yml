@@ -29,6 +29,11 @@ github_username: iamjasonkuo
 linkedin_username: jsonkuo-1
 instagram_username: jsonkuo
 
+# collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
 
 # Build settings
 markdown: kramdown

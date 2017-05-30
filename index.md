@@ -3,9 +3,6 @@ layout: default
 title: Hyperspace by HTML5 UP
 ---
 
-<!-- Sidebar -->
-
-
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -13,92 +10,24 @@ title: Hyperspace by HTML5 UP
 <section id="intro" class="wrapper style1 fullscreen fade-up">
 	<div class="inner">
 		<h1>Jason is trying to grow up...</h1>
-		<p> But he spends his time learning and building new things.</p>
+		<p> But he spends his time learning and building new things instead.</p>
 		<ul class="actions">
-			<li><a href="#one" class="button scrolly">Learn more</a></li>
+			<li><a href="#one" class="button scrolly">Find out what Jason is up to</a></li>
 		</ul>
 	</div>
 </section>
 
-<!-- REFERENCE FOR LOOP POSTS
-<ul class="post-list">
-	{% for post in site.posts limit:5 %}
-		<li>
-			{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-			<span class="post-meta">{{ post.date | date: date_format }}</span>
-
-			<h2>
-				<a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-			</h2>
-		</li>
-	{% endfor %}
-</ul> -->
-
-<!-- TODO: for loop in projects folder isn't working; test if project specific meta is passing through.
-<section id="one" class="wrapper style2 spotlights">
-	{% for project in site.projects limit:3 %}
-		<section>
-			<a href="{{site.baseurl}}{{project.pathname}} class="image">
-				<img src="images/pic01.jpg" alt="" data-position="center center"
-			</a>
-			<div class="content">
-				<div class="inner">
-					<h2>{{project.title}}/h2>
-					<p>{{project.description}}</p>
-					<ul class="actions">
-						<li><a href="{{site.baseurl}}thelayover" class="button">Learn more</a></li>
-					</ul>
-				</div>
-			</div>			
-		</section>
-	{% endfor %}
-</section> -->
-
-<!-- One -->
-<section id="one" class="wrapper style2 spotlights">
-	<section>
-		<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-		<div class="content">
-			<div class="inner">
-				<h2>The Layover App</h2>
-				<p>A stealth project aimed to solve the greatest problem known to travelers' all across the globe - the layover. Stay in touch for more updates on the project. </p>
-				<ul class="actions">
-					<li><a href="{{site.baseurl}}thelayover" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<section>
-		<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-		<div class="content">
-			<div class="inner">
-				<h2>Eventscore</h2>
-				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-				<ul class="actions">
-					<li><a href="#" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<section>
-		<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-		<div class="content">
-			<div class="inner">
-				<h2>Ultricies aliquam</h2>
-				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-				<ul class="actions">
-					<li><a href="#" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
+<section id="one" class="wrapper style2 fade-up">
+	<div class="inner">
+		<h2>About Jason</h2>
+		<p>I'm a design-minded, detail oriented product manager with software engineering qualities. I'm passionate about combining beautiful code with beautiful design while creating a product that people can truly love. I have experience managing products from idea to launch professionally and have been developing and designing software for the web, from single page web application to progressive microservice servers. I strive to create products that not only functions efficiently under the hood, but also can be enjoyed by all.</p>
+	</div>
 </section>
 
-<!-- Two -->
 <section id="two" class="wrapper style3 fade-up">
 	<div class="inner">
 		<h2>Levels unlocked</h2>
-		<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+		<p></p>
 		<div class="features">
 			<section>
 				<span class="icon major fa-code"></span>
@@ -137,11 +66,28 @@ title: Hyperspace by HTML5 UP
 	</div>
 </section>
 
-<!-- Three -->
-<section id="three" class="wrapper style1 fade-up">
+<section id="three" class="wrapper style1 spotlights">
+{% for project in site.projects limit:3 %}
+<section>
+<img src="images/pic01.jpg" class="image" alt="" data-position="center center" />
+<div class="content">
+<div class="inner">
+<h2>{{project.title}}</h2>
+<p>{{project.description}}</p>
+<p>Tech Stack: {{project.techstack}}</p>
+<ul class="actions">
+<li><a href="{{site.baseurl}}projects/{{project.filename}}" class="button">Learn more</a></li>
+</ul>
+</div>
+</div>			
+</section>
+{% endfor %}
+</section>
+
+<section id="four" class="wrapper style1 fade-up">
 	<div class="inner">
 		<h2>Get in touch</h2>
-		<p>I'm always interesting in learning more about others and thoughts. Feel free to drop a message. Promise, I don't <em>"byte"</em>.</p>
+		<p>I'm always interesting in learning more about others and open to any feedback. Feel free to drop a message. Promise, I don't <em>"byte"</em>.</p>
 		<div class="split style1">
 			<section>
 				<form method="post" action="https://formspree.io/{{site.email}}">

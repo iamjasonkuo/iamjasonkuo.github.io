@@ -1,8 +1,9 @@
 ---
 layout: page
 title:  The Layover App
-date:   2017-05-19 12:40:41 -0700
-pathname: thelayover
+date:   0001-01-01
+filename: thelayover
+techstack: React.js, React Router, Redux, Node.js, Auth0, MongoDb, Docker
 description: A stealth project aimed to solve the greatest problem known to travelers' all across the globe - the layover. Stay in touch for more updates on the project.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
