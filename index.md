@@ -17,49 +17,77 @@ title: Hyperspace by HTML5 UP
 	</div>
 </section>
 
-<section id="one" class="wrapper style2 fade-up">
-	<div class="inner">
-		<h2>About Jason</h2>
-		<p>I'm a design-minded, detail oriented product manager with software engineering qualities. I'm passionate about combining beautiful code with beautiful design while creating a product that people can truly love. I have experience managing products from idea to launch professionally and have been developing and designing software for the web, from single page web application to progressive microservice servers. I strive to create products that not only functions efficiently under the hood, but also can be enjoyed by all.</p>
-	</div>
+<section id="one" class="wrapper style2 fade-up spotlights">
+	<section>
+		<div class="content">
+			<div class="inner">
+				<h2>About Jason</h2>
+				<div>
+					<p>I'm a design-minded, detail oriented product manager with software engineering qualities. I'm passionate about combining beautiful code with beautiful design while creating a product that people can truly love. I have experience managing products from idea to launch professionally and have been developing and designing software for the web, from single page web application to progressive microservice servers. I strive to create products that not only functions efficiently under the hood, but also can be enjoyed by all.</p>
+					<br>
+				</div>
+			</div>
+		</div>
+	<img class="image-profile" alt="" data-position="center center" src="{{site.profilepicture}}" />
+	</section>
 </section>
 
 <section id="two" class="wrapper style3 fade-up">
 	<div class="inner">
-		<h2>Levels unlocked</h2>
-		<p></p>
+		<h2>TL:DR Jason's Curriculum Vitae</h2>
 		<div class="features">
 			<section>
-				<span class="icon major fa-code"></span>
-				<h3>Lorem ipsum amet</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+				<span class="icon major fa-graduation-cap"></span>
+				<h3>Education</h3>
+				<p>Graduated from UCLA in 2010 with an Economics major and minors in both Urban Planning and Regional Studies. </p>
+				<p>Graduated from Hack Reactor in 2017 focused on Software Engineering with leading industry techstack.</p>
 			</section>
 			<section>
-				<span class="icon major fa-lock"></span>
-				<h3>Aliquam sed nullam</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+				<span class="icon major fa-briefcase"></span>
+				<h3>Work Experience</h3>
+				<p>BI Manager @ Lifefactory (≈4 years) <br>
+				Co-founder @ Ludociti (≈1 year) <br>
+				Analyst @ General Electric Aviation (≈1 year) <br>
+				FP&A Intern @ AXA Advisors (≈3 months) <br>
+				Management Intern @ Aflac (≈3 months)
+				</p>
 			</section>
 			<section>
 				<span class="icon major fa-cog"></span>
-				<h3>Sed erat ullam corper</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+				<h3>Product Management Experience</h3>
+				<p>Netsuite ERP implementation @ Lifefactory <br>
+				Lifefactory Liquids iOS Mobile App @ Lifefactory <br>
+				Punchfunder Alpha Stage @ Ludociti</p>
 			</section>
 			<section>
 				<span class="icon major fa-desktop"></span>
-				<h3>Veroeros quis lorem</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+				<h3>Software Engineering Experience</h3>
+				<p>Eventscore iOS Mobile App @ Hack Reactor <br>
+				Hella Amazing Race App @ Hack Reactor <br>
+				Get Quoted App @ Hack Reactor
+				</p>
 			</section>
 			<section>
-				<span class="icon major fa-chain"></span>
-				<h3>Urna quis bibendum</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+				<span class="icon major fa-code-fork"></span>
+				<h3>Product Management Skills</h3>
+				<p>
+				<b>Applications:</b> Microsoft Office Suite, Balsamiq <br>
+				<b>Data Analysis Tools:</b> Qlik, Netsuite Analytics, Tableau, MicroStrategy <br>
+				<b>Productivity Tools:</b> Git, Trello, Basecamp <br>
+				<b>Languages:</b> Mandarin Chinese
+				</p>
 			</section>
 			<section>
-				<span class="icon major fa-diamond"></span>
-				<h3>Aliquam urna dapibus</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+				<span class="icon major fa-code"></span>
+				<h3>Technical Skills</h3>
+				<p>
+					<b>Frameworks/Libraries:</b> React/React Native, Angular.js, Express, HTML, CSS/SCSS, Flexbox, Material UI, jQuery, Redux, Jekyll, Webpack, Babel, Heroku, AWS, bCrypt, Crypto, Docker <br>
+					<b>Software Engineering:</b> Test driven development (units/smoke/integration), architecture design, code review, agile dev <br>
+					<b>Technical Languages:</b> JavaScript, JSX, SQL, EDI, Visual Basic.Net, Ruby, Python
+				</p>
 			</section>
 		</div>
+		<p><em>Approximate proficiency in descending order from left to right</em></p>		
 		<ul class="actions">
 			<li><a href="{{site.baseurl}}resume" class="button">Check out Jason's Resume</a></li>
 		</ul>
@@ -67,21 +95,21 @@ title: Hyperspace by HTML5 UP
 </section>
 
 <section id="three" class="wrapper style1 spotlights">
-{% for project in site.projects limit:3 %}
-<section>
-<img src="images/pic01.jpg" class="image" alt="" data-position="center center" />
-<div class="content">
-<div class="inner">
-<h2>{{project.title}}</h2>
-<p>{{project.description}}</p>
-<p>Tech Stack: {{project.techstack}}</p>
-<ul class="actions">
-<li><a href="{{site.baseurl}}projects/{{project.filename}}" class="button">Learn more</a></li>
-</ul>
-</div>
-</div>			
-</section>
-{% endfor %}
+	{% for project in site.projects limit:3 %}
+		<section>
+			<img src="images/pic01.jpg" class="image" alt="" data-position="center center" />
+			<div class="content">
+				<div class="inner">
+					<h2>{{project.title}}</h2>
+					<p>{{project.description}}</p>
+					<p>Tech Stack: {{project.techstack}}</p>
+					<ul class="actions">
+						<li><a href="{{site.baseurl}}projects/{{project.filename}}" class="button">Learn more</a></li>
+					</ul>
+				</div>
+			</div>			
+		</section>
+	{% endfor %}
 </section>
 
 <section id="four" class="wrapper style1 fade-up">
