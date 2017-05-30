@@ -23,12 +23,15 @@ title: Hyperspace by HTML5 UP
 			<div class="inner">
 				<h2>About Jason</h2>
 				<div>
-					<p>I'm a design-minded, detail oriented product manager with software engineering qualities. I'm passionate about combining beautiful code with beautiful design while creating a product that people can truly love. I have experience managing products from idea to launch professionally and have been developing and designing software for the web, from single page web application to progressive microservice servers. I strive to create products that not only functions efficiently under the hood, but also can be enjoyed by all.</p>
+					<p>I'm a design-minded, detail oriented product manager with software engineering qualities. I'm passionate about combining beautiful code with beautiful design while creating a product that people can truly love.</p>
+					<p>I have experience managing products from idea to launch professionally and have been developing and designing software for the web, from single page web application to progressive microservice servers. I strive to create products that not only functions efficiently under the hood, but also can be enjoyed by all.</p>
 					<br>
 				</div>
 			</div>
 		</div>
-	<img class="image-profile" alt="" data-position="center center" src="{{site.profilepicture}}" />
+	<div>
+		<img class="image-profile" alt="" data-position="center center" src="{{site.profilepicture}}" />
+	</div>
 	</section>
 </section>
 
@@ -89,7 +92,7 @@ title: Hyperspace by HTML5 UP
 		</div>
 		<p><em>Approximate proficiency in descending order from left to right</em></p>		
 		<ul class="actions">
-			<li><a href="{{site.baseurl}}resume" class="button">Check out Jason's Resume</a></li>
+			<li><a href="{{site.baseurl}}download/JasonKuoCV.pdf" class="button">Check out Jason's Current Resume in PDF</a></li>
 		</ul>
 	</div>
 </section>
