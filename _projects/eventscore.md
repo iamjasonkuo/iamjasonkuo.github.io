@@ -11,6 +11,7 @@ description: A concert discovery application using predictive and public social 
 
 <!-- Intro -->
 <section id="intro" class="wrapper style1 fade-up">
+  <img style="position: absolute; background: rgba(0, 0, 0, .5); min-width: 100%; height: auto" src="{{site.baseurl}}images/eventscore_main.jpg"  alt="" data-position="center center" />
 	<div class="inner">
 		<h1>{{page.title}}</h1>
 		<p>{{page.description}}</p>
