@@ -1,0 +1,31 @@
+picture_path: eventscore
+preview:
+  filename:
+  original:
+  sizes:
+  thumbnail:
+pictures:
+- filename: eventscore-eventlist-0001
+  original: eventscore-eventlist-0001-750x1334.png
+  sizes:
+  thumbnail: eventscore-eventlist-0001-thumbnail.jpg
+- filename: eventscore-genrelist-0002
+  original: eventscore-genrelist-0002-750x1334.png
+  sizes:
+  thumbnail: eventscore-genrelist-0002-thumbnail.jpg
+- filename: eventscore-event-0003
+  original: eventscore-event-0003-750x1334.png
+  sizes:
+  thumbnail: eventscore-event-0003-thumbnail.jpg
+- filename: eventscore-search-0004
+  original: eventscore-search-0004-750x1334.png
+  sizes:
+  thumbnail: eventscore-search-0004-thumbnail.jpg
+- filename: eventscore-map-0005
+  original: eventscore-map-0005-750x1334.png
+  sizes:
+  thumbnail: eventscore-map-0005-thumbnail.jpg
+- filename: eventscore-login-0006
+  original: eventscore-login-0006-750x1334.png
+  sizes:
+  thumbnail: eventscore-login-0006-thumbnail.jpg

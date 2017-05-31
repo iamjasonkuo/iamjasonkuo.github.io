@@ -24,7 +24,7 @@ title: Hyperspace by HTML5 UP
 				<h2>About Jason</h2>
 				<div>
 					<p>I'm a design-minded, detail oriented product manager with software engineering qualities. I'm passionate about combining beautiful code with beautiful design while creating a product that people can truly love.</p>
-					<p>I have experience managing products from idea to launch professionally and have been developing and designing software for the web, from single page web application to progressive microservice servers. I strive to create products that not only functions efficiently under the hood, but also can be enjoyed by all.</p>
+					<p>I have experience managing products from idea to launch professionally and have been developing and designing software for the web, from single page web application to progressive microservice servers. I strive to create elegant and functional products that have a palpable impact on the lives of users.</p>
 					<br>
 				</div>
 			</div>
@@ -67,9 +67,9 @@ title: Hyperspace by HTML5 UP
 			<section>
 				<span class="icon major fa-desktop"></span>
 				<h3>Software Engineering Experience</h3>
-				<p>Eventscore iOS Mobile App @ Hack Reactor <br>
-				Hella Amazing Race App @ Hack Reactor <br>
-				Get Quoted App @ Hack Reactor
+				<p>Eventscore iOS Mobile App<br>
+				Hella Amazing Race App <br>
+				Get Quoted App
 				</p>
 			</section>
 			<section>
@@ -79,7 +79,7 @@ title: Hyperspace by HTML5 UP
 				<b>Applications:</b> Microsoft Office Suite, Balsamiq <br>
 				<b>Data Analysis Tools:</b> Qlik, Netsuite Analytics, Tableau, MicroStrategy <br>
 				<b>Productivity Tools:</b> Git, Trello, Basecamp <br>
-				<b>Languages:</b> Mandarin Chinese
+				<b>Languages:</b> English, Mandarin Chinese
 				</p>
 			</section>
 			<section>
