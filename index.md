@@ -107,7 +107,11 @@ title: Hyperspace by HTML5 UP
 				<div class="inner">
 					<h2>{{project.title}}</h2>
 					<p>{{project.description}}</p>
-					<p>Tech Stack: {{project.techstack}}</p>
+					<p>
+					<b>Tech Stack:</b> {{project.techstack}}<br>
+					<b>Web Technologies:</b> {{project.webtechnologies}}<br>
+					<b>Api:</b> {{project.api}}
+					</p>
 					<ul class="actions">
 						<li><a href="{{site.baseurl}}projects/{{project.filename}}" class="button">Learn more</a></li>
 					</ul>

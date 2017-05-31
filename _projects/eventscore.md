@@ -7,6 +7,7 @@ techstack: MongoDb, Express, React Native, Node.js
 webtechnologies: React Router Flux, Redux, Cheerio, Bluebird, Google Maps, D3.js, CRON
 api: IBM Watson, Shopify, Klout, Songkick
 description: A concert discovery application using predictive and public social influence analysis powered by React Native, Redux, and much more.
+support: [jquery, gallery]
 ---
 
 <!-- Intro -->
@@ -45,7 +46,7 @@ description: A concert discovery application using predictive and public social 
 		</div>
     <div class="content">
       <div class="inner">
-      <p>Hello, this is where the photo gallery will go. source: https://olivierpieters.be/blog/2016/02/26/creating-a-jekyll-image-gallery </p>
+        {% include gallery-layout.html gallery=site.data.galleries.san-francisco %}
       </div>
     </div>
 	</section>
