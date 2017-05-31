@@ -29,8 +29,10 @@ title: Hyperspace by HTML5 UP
 				</div>
 			</div>
 		</div>
-	<div>
-		<img class="image-profile" alt="" data-position="center center" src="{{site.profilepicture}}" />
+	<div class="content">
+		<div class="inner">
+			<img style="border-radius:50%" alt="" data-position="center center" src="{{site.profilepicture}}" />
+		</div>
 	</div>
 	</section>
 </section>
