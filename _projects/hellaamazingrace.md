@@ -5,8 +5,12 @@ date:   0003-01-01
 filename: hellaamazingrace
 techstack: MongoDb, Express, React, Node.js
 webtechnologies: React Router, Bluebird, Google Maps, Pubnub, WebRTC, Material UI
-api: Google Maps, Google Cloudvision, Google Places
+api: Google Maps, Google Cloudvision, Google Places, Facebook
 description: Real-time social racing application with photo recognition.
+support: [jquery, gallery]
+galleryid: hellaamazingrace
+mainphoto:
+sourcecode: https://github.com/Quoted/HellaAmazingRace
 ---
 
 <!-- Intro -->
@@ -33,10 +37,10 @@ description: Real-time social racing application with photo recognition.
           </p>
 					<p>
             Our app allows users to create races by picking specific destinations by checkpoints utilizing Google Places and allows users to compete amongst themselves real-time. In order to make things interesting, the application requires the racers two forms of checkpoint validations: <br>
-            <br>
-            1) Geolocation vicinity from destinations
-            2) Photo Recognition based on desired input
-            <br>
+            <ol>
+              <li>Geolocation vicinity from destinations</li>
+              <li>Photo Recognition based on desired input</li>
+            </ol>
             Through the use of Google Cloudvision and Places, the application randomly chooses a point of interest or object for the racers to take a picture for photo validation.
           </p>
           <p>
@@ -62,7 +66,12 @@ description: Real-time social racing application with photo recognition.
 			<section>
 				<span class="icon major fa-user"></span>
 				<h3>User</h3>
-				<p></p>
+        <ul>
+          <li>I expect to be able to create new races with new checkpoints</li>
+          <li>I expect to be able to be able to race with other racers</li>
+          <li>I expect to utilize my device's native camera input to take pictures</li>
+
+        </ul>
 			</section>
 			<section>
 				<span class="icon major fa-code"></span>
@@ -75,28 +84,24 @@ description: Real-time social racing application with photo recognition.
 </section>
 
 <section id="three" class="wrapper style1 fade-up spotlights">
-	<section>
-			<div class="content">
-				<h2>Technical Challenges</h2>
-				<div>
-					<p>
-            What's better than the Amazing Race - an Hella Amazing Race. Hella Amazing Race is our interpretation of how races should be conducted in unfamiliar parts of town; Races should include content awareness for it's path and surroundings.
-          </p>
-					<p>
-            Our app allows users to create races by picking specific destinations by checkpoints utilizing Google Places and allows users to compete amongst themselves real-time. In order to make things interesting, the application requires the racers two forms of checkpoint validations: <br>
-            <br>
-            1) Geolocation vicinity from destinations
-            2) Photo Recognition based on desired input
-            <br>
-            Through the use of Google Cloudvision and Places, the application randomly chooses a point of interest or object for the racers to take a picture for photo validation.
-          </p>
-          <p>
-            <b>Tech Stack:</b> {{page.techstack}} <br>
-            <b>Web Technologies:</b> {{page.webtechnologies}} <br>
-            <b>Api:</b> {{page.api}}
-          </p>
-					<br>
-				</div>
-		</div>
-	</section>
+<section>
+  <div class="content">
+    <div class="inner">
+      <h2>Technical Challenges</h2>
+      <div>
+        You'll always run into unexpected problems with any legacy project. For one, the legacy code did not enable multiple users to join a race. Another example was the fact that the legacy code was built to be a web app with no responsive designs to scale to mobile resolutions. However, the one that takes the cake, that is still left incomplete for this project, is the storage of cached data.<br>
+        <br>
+        The application handled states locally for all components which became problematic whenever views were switched during a race to access the checkpoint component. Without the incorporation of Redux or storing all functions in its root container, it became impossible to complete the project.<br>
+        <br>
+        All in all, it was a good experience to development and touch base on new technologies that I've never encountered (i.e, Google Cloudvision and WebRTC)<br>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="inner">
+    {% highlight javascript %}
+    {% endhighlight %}
+    </div>
+  </div>
+</section>
 </section>

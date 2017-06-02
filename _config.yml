@@ -8,8 +8,8 @@
 # Site settings
 title: Jason Kuo
 email: iamjasonkuo@gmail.com
-phone: (626) 716-8834
-description: This is Jason's Website.
+phone: (626) 716-8334
+description: This is Jason's Personal Website.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://iamjasonkuo.github.io" # the base hostname & protocol for your site
 
