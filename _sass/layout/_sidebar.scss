@@ -20,23 +20,6 @@
 		width: _size(sidebar-width);
 		z-index: _misc(z-index-base);
 
-		> .top {
-			@include vendor('display', 'flex');
-			@include vendor('flex-direction', 'column');
-			@include vendor('justify-content', 'flex-start');
-			@include vendor('transform', 'translateY(0)');
-			@include vendor('transition', (
-				'opacity #{_duration(activation)} ease',
-			));
-			min-height: 100%;
-			opacity: 1;
-			width: 100%;
-
-			body.is-ie & {
-				height: 100%;
-			}
-		}
-
 		> .inner {
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'column');

@@ -45,16 +45,16 @@ title: Hyperspace by HTML5 UP
 				<span class="icon major fa-graduation-cap"></span>
 				<h3>Education</h3>
 				<p>Graduated from UCLA in 2010 with an Economics major and minors in both Urban Planning and Regional Studies. </p>
-				<p>Graduated from Hack Reactor in 2017 focused on Software Engineering with leading industry techstack.</p>
+				<p>Graduated from Hack Reactor in 2017 focused on Software Engineering utilizing current leading industry web technologies.</p>
 			</section>
 			<section>
 				<span class="icon major fa-briefcase"></span>
 				<h3>Work Experience</h3>
-				<p>BI Manager @ Lifefactory (≈4 years) <br>
-				Co-founder @ Ludociti (≈1 year) <br>
-				Analyst @ General Electric Aviation (≈1 year) <br>
-				FP&A Intern @ AXA Advisors (≈3 months) <br>
-				Management Intern @ Aflac (≈3 months)
+				<p>BI Manager @ Lifefactory (≈ 4 years) <br>
+				Co-founder @ Ludociti (≈ 1 year) <br>
+				Analyst @ General Electric Aviation (≈ 1 year) <br>
+				FP&A Intern @ AXA Advisors (≈ 3 months) <br>
+				Management Intern @ Aflac (≈ 3 months)
 				</p>
 			</section>
 			<section>

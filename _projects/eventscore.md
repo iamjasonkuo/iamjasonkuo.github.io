@@ -8,7 +8,7 @@ webtechnologies: React Router Flux, Redux, Cheerio, Bluebird, Google Maps, D3.js
 api: IBM Watson, Shopify, Klout, Songkick
 description: A concert discovery application using predictive and public social influence analysis powered by React Native, Redux, and much more.
 support: [jquery, gallery]
-galleryid: gallery1
+galleryid: eventscore
 mainphoto: eventscore-eventlist-0001-750x1334.png
 sourcecode: https://github.com/Eventscore
 ---

@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-	<title>Hyperspace</title>
+	<title>Jason Kuo</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="http://localhost:4000//assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -16,7 +16,18 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+		</script>
+	
 
+	
+		<!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js">
+		</script>
+
+		<!-- Actual includes needed for the gallery -->
+		<script src="/bower_components/lightbox2/dist/js/lightbox.min.js"></script>
+		<link href="/bower_components/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
 	
 </head>
 
@@ -24,14 +35,11 @@
 
 
 <section id="sidebar">
-	<div class="top">
-		<a href='http://localhost:4000/'>Back</a>
-	</div>
 	<div class="inner">
 		<nav>
 			<ul>
 				<li><a href="#intro">Intro</a></li>
-				<li><a href="#one">About The Layover App</a></li>
+				<li><a href="#one">About The Layover</a></li>
 				<li><a href="#two">Key Requirements</a></li>
 				<li><a href="#three">Technical Challenges</a></li>
 			</ul>
@@ -50,20 +58,78 @@
 -create web version of resume -->
 
 <div id="wrapper">
-  <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+  <!-- Intro -->
+<section id="intro" class="wrapper style1 fade-up">
+  <img style="position: absolute; background: rgba(0, 0, 0, .5); min-width: 100%; height: auto" src="/images/thelayover_main.png" alt="" data-position="center center" />
+	<div class="inner">
+		<h1>The Layover</h1>
+		<p>A stealth project aimed to solve the greatest problem known to travelers' all across the globe - the layover. Stay in touch for more updates on the project.</p>
+		<ul class="actions">
+			<li><a href="#" class="button disabled">Demo</a></li>
+      <li><a href="" class="button disabled">Source Code</a></li>
+		</ul>
+	</div>
+</section>
 
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<section id="one" class="wrapper style2 fade-up spotlights">
+	<section>
+		<div class="content">
+			<div class="inner">
+				<h2>About The Layover</h2>
+				<div>
+					<p>
+            TBD
+          </p>
+          <p>
+            <b>Tech Stack:</b> MongoDb, Express, React, Node.js <br />
+            <b>Web Technologies:</b> TBD <br />
+            <b>Api:</b> TBD
+          </p>
+					<br />
+				</div>
+			</div>
+		</div>
+    <div class="content">
+      <div class="inner">
+        
+  
 
-<p>Jekyll also offers powerful support for code snippets:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+      </div>
+    </div>
+	</section>
+</section>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<section id="two" class="wrapper style3 fade-up">
+	<div class="inner">
+		<h2>Key Requirements</h2>
+		<div class="features">
+			<section>
+				<span class="icon major fa-user"></span>
+				<h3>User</h3>
+				<p>TBD</p>
+			</section>
+			<section>
+				<span class="icon major fa-code"></span>
+				<h3>System</h3>
+          <p>TBD</p>
+			</section>
+		</div>
+	</div>
+</section>
 
+<section id="three" class="wrapper style1 fade-up spotlights">
+	<section>
+		<div class="content">
+			<div class="inner">
+				<h2>Technical Challenges</h2>
+				<div>
+          TBD
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
 
 </div>
 
