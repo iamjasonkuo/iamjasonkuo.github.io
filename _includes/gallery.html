@@ -1,0 +1,14 @@
+{% for gallery in site.data.galleries %}
+  {% if gallery.id == page.galleryid %}
+    <ul style="column-count: 2; column-gap: 10px; list-style-type: none">
+    {% for image in gallery.images %}
+      <li>
+        <b>{{ image.text }}</b><br>
+        <a href="{{site.baseurl}}assets/{{ gallery.imagefolder }}/{{ image.name }}" data-lightbox="{{ gallery.id }}" title="{{ image.text }}">
+          <img src="{{site.baseurl}}assets/{{ gallery.imagefolder }}/{{ image.thumb }}">
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}

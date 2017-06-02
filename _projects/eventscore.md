@@ -8,6 +8,9 @@ webtechnologies: React Router Flux, Redux, Cheerio, Bluebird, Google Maps, D3.js
 api: IBM Watson, Shopify, Klout, Songkick
 description: A concert discovery application using predictive and public social influence analysis powered by React Native, Redux, and much more.
 support: [jquery, gallery]
+galleryid: gallery1
+mainphoto: eventscore-eventlist-0001-750x1334.png
+sourcecode: https://github.com/Eventscore
 ---
 
 <!-- Intro -->
@@ -18,7 +21,7 @@ support: [jquery, gallery]
 		<p>{{page.description}}</p>
 		<ul class="actions">
 			<li><a href="#" class="button disabled" >Demo</a></li>
-      <li><a href="#" class="button">Source Code</a></li>
+      <li><a href="{{page.sourcecode}}" class="button">Source Code</a></li>
 		</ul>
 	</div>
 </section>
@@ -46,7 +49,7 @@ support: [jquery, gallery]
 		</div>
     <div class="content">
       <div class="inner">
-        {% include gallery-layout.html gallery=site.data.galleries.san-francisco %}
+        {% include gallery.html %}
       </div>
     </div>
 	</section>
@@ -59,15 +62,92 @@ support: [jquery, gallery]
 			<section>
 				<span class="icon major fa-user"></span>
 				<h3>User</h3>
-				<p></p>
+				<ul>
+          <li>I expect to get reliable and bare minimum information in regards to upcoming events.</li>
+          <li>I expect to be able to filter events by keywords and locations.</li>
+          <li>I expect to be able to buy tickets seamlessly through the application.</li>
+          <li>I expect various scores regarding the event.</li>
+        </ul>
 			</section>
 			<section>
 				<span class="icon major fa-code"></span>
 				<h3>System</h3>
-				<p>
-
-				</p>
+				<ul>
+          <li>I expect all routes to be accessible and working expectingly.</li>
+          <li>I expect the microserver bot to crawl through various websites and capture nodes that pertains to the concerts in our database.</li>
+          <li>I expect all processes to asynchronous activity to be handled in a systematic way ensuring point-to-point connection.</li>
+          <li>I expect IBM Watson tone analyzer to determine social perception of the nodes captured.</li>
+				</ul>
 			</section>
 		</div>
 	</div>
+</section>
+
+<section id="three" class="wrapper style1 fade-up spotlights">
+	<section>
+		<div class="content">
+			<div class="inner">
+				<h2>Technical Challenges</h2>
+				<div>
+          There were a myriad of issues with this project altogether.
+          <ul>
+            <li>Where to pull the appropriate sources to get ticket sales information?</li>
+            <li>Which algorithm would best represent the score calculation of these various concerts and what external factors would need to be accounted for?</li>
+            <li>What kind of techstack and system architecture is most fitting for the application?</li>
+          </ul>
+          Nevertheless, as a collective group, we decided that finishing the key requirements mentioned above as a MVP would be most critical and ended up curating data from reputable 3rd party APIs while basing the algorithm on a weighted logarithmic scale to ensure that keywords with many social mentions can still produce a positive result. Through proper coordination, our team of 4 finished the entire ideation and full-stack development within 4 weeks.
+          <p>
+            In regards to development, the greatest technical would most likely be the sheer amount of Promises used - During which, I'd call the promises from hell. To right, you'll see a piece code I've written for the bot to crawl through various websites. In short, there are nested promises within promises with more promises within helper functions. Speaking of which, this segment doesn't even tap into tone analysis or data aggregated which leads to more promises.
+          </p>
+          <p>
+            let's just say I've gotten pretty good at keeping my promises.
+          </p>
+					<br>
+				</div>
+			</div>
+		</div>
+    <div class="content">
+      <div class="inner">
+      {% highlight javascript %}
+        exports.initiateCrawl = function() {
+          return Promise.all(sites.map((site) => {
+            return new Promise((resolve, reject) => {
+              var SEARCH_WORD = {};
+              Index.keywords.forEach( (keyword) => {
+                SEARCH_WORD[keyword] = [];
+              });
+              site = 'https://' + site;
+              url = new URL(site);
+              baseUrl = url.protocol + '//' + url.hostname;
+              SEARCH_WORD.hostname = url.hostname;
+              request(url.origin, function(error, response, body) {
+                if(response.statusCode !== 200) {
+                  reject(error);
+                }
+                var $ = cheerio.load(body, {ignoreWhitespace: true});
+                var htmlBody = $('html > body');
+                var wordsFound = searchForWord(htmlBody, SEARCH_WORD); //Search for words found in SEARCH_WORD
+                if(wordsFound.length > 0) {
+                  var captured = captureDomNodes(url, wordsFound, $, null, SEARCH_WORD); //Capture each Dom Nodes
+                  resolve(captured);
+                } else {
+                  resolve([]);
+                }
+              });
+            })
+          }))
+          .then((result) => {
+            return Watson.toneAnalysis(result);
+          })
+          .then((testresult) => {    
+            return testresult;
+          })
+          .catch((error) => {
+            return error;
+          });
+        }
+      {% endhighlight %}
+      </div>
+    </div>
+	</section>
 </section>

@@ -102,7 +102,10 @@ title: Hyperspace by HTML5 UP
 <section id="three" class="wrapper style1 spotlights">
 	{% for project in site.projects limit:3 %}
 		<section>
-			<img src="images/pic01.jpg" class="image" alt="" data-position="center center" />
+			<!-- <img src="{{site.baseurl}}images/pic01.jpg" class="image" alt="" data-position="center center" /> -->
+			<div class="image">
+			<img src="{{site.baseurl}}assets/photography/{{project.filename}}/{{project.mainphoto}}" alt="" data-position="center center" />
+			</div>
 			<div class="content">
 				<div class="inner">
 					<h2>{{project.title}}</h2>

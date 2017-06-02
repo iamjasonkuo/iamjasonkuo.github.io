@@ -1,0 +1,22 @@
+- id: gallery1
+  description: This is the first gallery
+  imagefolder: photography/eventscore
+  images:
+  - name: eventscore-eventlist-0001-750x1334.png
+    thumb: eventscore-eventlist-0001-thumbnail.jpg
+    text: Event List View
+  - name: eventscore-genrelist-0002-750x1334.png
+    thumb: eventscore-genrelist-0002-thumbnail.jpg
+    text: Genre List View
+  - name: eventscore-event-0003-750x1334.png
+    thumb: eventscore-event-0003-thumbnail.jpg
+    text: Event View
+  - name: eventscore-search-0004-750x1334.png
+    thumb: eventscore-search-0004-thumbnail.jpg
+    text: Search Module View
+  - name: eventscore-map-0005-750x1334.png
+    thumb: eventscore-map-0005-thumbnail.jpg
+    text: Map View
+  - name: eventscore-login-0006-750x1334.png
+    thumb: eventscore-login-0006-thumbnail.jpg
+    text: Login View
