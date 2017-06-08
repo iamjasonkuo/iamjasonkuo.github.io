@@ -61,7 +61,7 @@ sourcecode: https://github.com/Eventscore
 		<div class="features">
 			<section>
 				<span class="icon major fa-user"></span>
-				<h3>User</h3>
+				<h3>User Cases</h3>
 				<ul>
           <li>I expect to get reliable and bare minimum information in regards to upcoming events (Artist, Location, Datetime, Scores).</li>
           <li>I expect to be able to filter events by keywords and locations.</li>
@@ -71,12 +71,12 @@ sourcecode: https://github.com/Eventscore
 			</section>
 			<section>
 				<span class="icon major fa-code"></span>
-				<h3>System</h3>
+				<h3>System Requirements</h3>
 				<ul>
-          <li>I expect all routes to be accessible and working expectingly using React Router Flux.</li>
-          <li>I expect Redux to store all reducers and states</li>
-          <li>I expect the microserver bot to crawl through various websites and capture nodes that pertains to the concerts in our database.</li>
-          <li>I expect all processes to asynchronous activity to be handled in a systematic way ensuring point-to-point connection.</li>
+          <li>React Navigator via React-Router-Flux (experimental react router navigator)</li>
+          <li>Store states globally via Redux</li>
+          <li>Microservice server to crawl through various websites and capture nodes that pertains to the concerts in our database. To be pinged via CRON.</li>
+          <li>Process all asynchronous activity via promises via bluebird.</li>
           <li>I expect IBM Watson tone analyzer to determine social perception of the nodes captured.</li>
 				</ul>
 			</section>
