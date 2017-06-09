@@ -9,13 +9,12 @@ api: Google Maps, Google Cloudvision, Google Places, Facebook
 description: Real-time social racing application with photo recognition.
 support: [jquery, gallery]
 galleryid: hellaamazingrace
-mainphoto:
+mainphoto: hellaamazingrace-main.png
 sourcecode: https://github.com/Quoted/HellaAmazingRace
 ---
-
+<!-- style="object-fit: none; object-position: 50% 50%; position: absolute; background: rgba(0, 0, 0, .5); min-width: 100%; height: auto" -->
 <!-- Intro -->
 <section id="intro" class="wrapper style1 fade-up">
-  <img style="position: absolute; background: rgba(0, 0, 0, .5); min-width: 100%; height: auto" src="{{site.baseurl}}images/eventscore_main.jpg"  alt="" data-position="center center" />
 	<div class="inner">
 		<h1>{{page.title}}</h1>
 		<p>{{page.description}}</p>
@@ -33,7 +32,7 @@ sourcecode: https://github.com/Quoted/HellaAmazingRace
 				<h2>About {{page.title}}</h2>
 				<div>
 					<p>
-            What's better than the Amazing Race - an Hella Amazing Race. Hella Amazing Race is our interpretation of how races should be conducted in unfamiliar parts of town; Races should include content awareness for it's path and surroundings.
+            What's better than the Amazing Race - a Hella Amazing Race. Hella Amazing Race is our interpretation of how races should be conducted in unfamiliar parts of town; Races should include content awareness for it's path and surroundings.
           </p>
 					<p>
             Our app allows users to create races by picking specific destinations by checkpoints utilizing Google Places and allows users to compete amongst themselves real-time. In order to make things interesting, the application requires the racers two forms of checkpoint validations: <br>
@@ -53,7 +52,7 @@ sourcecode: https://github.com/Quoted/HellaAmazingRace
 		</div>
     <div class="content">
       <div class="inner">
-      <p>Hello, this is where the photo gallery will go. source: https://olivierpieters.be/blog/2016/02/26/creating-a-jekyll-image-gallery </p>
+        {% include gallery.html %}
       </div>
     </div>
 	</section>
@@ -61,23 +60,28 @@ sourcecode: https://github.com/Quoted/HellaAmazingRace
 
 <section id="two" class="wrapper style3 fade-up">
 	<div class="inner">
-		<h2>Key Requirements</h2>
+		<h2>The Concept</h2>
+    <h3>Goal</h3>
+    <p>As a legacy project, we decided to enhance the current code based to accept multiple racers and make checkpoints more meaning by incorporating objectives.</p>
 		<div class="features">
-			<section>
+      <section>
 				<span class="icon major fa-user"></span>
-				<h3>User</h3>
-        <ul>
-          <li>I expect to be able to create new races with new checkpoints</li>
-          <li>I expect to be able to be able to race with other racers</li>
-          <li>I expect to utilize my device's native camera input to take pictures</li>
-
+				<h3>User Cases</h3>
+				<ul>
+          <li>I expect to be able to create races and start races.</li>
+          <li>I expect to be able to race against other users simultaneously.</li>
+          <li>I expect to be able race using my cellphone.</li>
+          <li>I expect to be able to take pictures of objectives and get some sort of validation that the objective has been met.</li>
         </ul>
 			</section>
 			<section>
 				<span class="icon major fa-code"></span>
-				<h3>System</h3>
-				<p>
-				</p>
+				<h3>System Requirements</h3>
+				<ul>
+          <li>Port pre-existing code to mobile by making it responsive to device's screen size via material ui components</li>
+          <li>Pass image blob to server for further image analysis by Google Cloudvision</li>
+          <li>Increase the number of subscribers for each race event via Pubnub</li>
+				</ul>
 			</section>
 		</div>
 	</div>

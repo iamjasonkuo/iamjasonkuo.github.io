@@ -104,7 +104,7 @@ title: Hyperspace by HTML5 UP
 		<section>
 			<!-- <img src="{{site.baseurl}}images/pic01.jpg" class="image" alt="" data-position="center center" /> -->
 			<div class="image">
-			<img src="{{site.baseurl}}assets/photography/{{project.filename}}/{{project.mainphoto}}" alt="" data-position="center center" />
+			<img src="{{site.baseurl}}assets/photography/{{project.filename}}/{{project.mainphoto}}" alt="" />
 			</div>
 			<div class="content">
 				<div class="inner">

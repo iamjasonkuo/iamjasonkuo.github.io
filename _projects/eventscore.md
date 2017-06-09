@@ -9,7 +9,7 @@ api: IBM Watson, Shopify, Klout, Songkick
 description: A concert discovery application using predictive and public social influence analysis powered by React Native, Redux, and much more.
 support: [jquery, gallery]
 galleryid: eventscore
-mainphoto: eventscore-eventlist-0001-750x1334.png
+mainphoto: eventscore-main.png
 sourcecode: https://github.com/Eventscore
 ---
 
@@ -33,7 +33,7 @@ sourcecode: https://github.com/Eventscore
 				<h2>About {{page.title}}</h2>
 				<div>
 					<p>
-            As self-proclaimed music gurus, we decided that discovering new music is best when heard live. After countless of hours scrambling around and pitching ideas left-to-right, we ended up with Eventscore - A concert discovering tool built based on geolocation and social perception.
+            As self-proclaimed music gurus, we decided that discovering new music is best when heard live. After countless of hours scrambling around and pitching ideas left-to-right, we ended up with Eventscore - A concert discovery tool built based on geolocation and social perception.
           </p>
 					<p>
             Our app curates a list of upcoming concerts given your search query and scores the event based on an algorithm that concatenates various scores from 3rd Party API services (Spotify, Klout, SeatGeek, and etc) as well as social tones from social media sources to one. The application utilizes microservices to serve fetched social tones for each particular event based on a timed job schedule.
@@ -57,9 +57,13 @@ sourcecode: https://github.com/Eventscore
 
 <section id="two" class="wrapper style3 fade-up">
 	<div class="inner">
-		<h2>Key Requirements</h2>
+		<h2>The Concept</h2>
+    <h3>Goal</h3>
+    <p>We believe that the demand and perception of music concerts are mainly determined by social influence. Whether this social influence is driven by the heritage of the concert, the popularity of the artist, or location of the event, <em><b>our goal is to be the klout for music concert</b></em> by aggregating all these various external factors into one score.</p>
+    <h3>The Audience</h3>
+    <p>Based on a general survey conducted by Ticketmaster in 2014. Millennials and middle-age groups account for 78% of all concert-goers with middle-age consumers (35-54 years old) making up 43% of the attendees. With this fact in mind, we knew we needed to create a mobile application instead of web based application as an MVP to accommodate the increasingly growing usage of mobile technology. We also knew we needed to build a feature for concert ticketing buying catered to our middle-age generation based on their technical abilities. Our user studies, showed that users would rather be told what concerts were "trending" rather than doing the research themselves thus a microservice bot crawler was developed to collect social perception.</p>
 		<div class="features">
-			<section>
+      <section>
 				<span class="icon major fa-user"></span>
 				<h3>User Cases</h3>
 				<ul>
@@ -77,7 +81,7 @@ sourcecode: https://github.com/Eventscore
           <li>Store states globally via Redux</li>
           <li>Microservice server to crawl through various websites and capture nodes that pertains to the concerts in our database. To be pinged via CRON.</li>
           <li>Process all asynchronous activity via promises via bluebird.</li>
-          <li>I expect IBM Watson tone analyzer to determine social perception of the nodes captured.</li>
+          <li>Procure tone analysis from IBM Watson tone Analyzer API based on crawled content.</li>
 				</ul>
 			</section>
 		</div>
@@ -90,11 +94,11 @@ sourcecode: https://github.com/Eventscore
 			<div class="inner">
 				<h2>Technical Challenges</h2>
 				<div>
-          There were a myriad of issues with this project altogether.
-          <br>
-          <ul>
-            <li>Where to pull the appropriate sources to get ticket sales information?</li>
-            <li> Where to forecast sales from resellers and how to appropriately determine demand from those sales</li>
+          There were a myriad of issues with this project altogether:
+          <ul style="margin: 0">
+            <li>Where do we pull the appropriate sources to get ticket sales information?</li>
+            <li> Where to forecast sales from resellers and how to appropriately determine demand from those sales?</li>
+            <li> Can we determine maximum capacity by venue location or is there a source that provides us all available tickets for sale?</li>  
             <li>Which algorithm would best represent the score calculation of these various concerts and what external factors would need to be accounted for?</li>
             <li>What kind of techstack and system architecture is most fitting for the application?</li>
           </ul>

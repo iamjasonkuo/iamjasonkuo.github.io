@@ -1,5 +1,5 @@
 - id: eventscore
-  description: This is the first gallery
+  description: This eventscore's gallery
   imagefolder: photography/eventscore
   images:
   - name: eventscore-eventlist-0001-750x1334.png
@@ -20,3 +20,22 @@
   - name: eventscore-login-0006-750x1334.png
     thumb: eventscore-login-0006-thumbnail.jpg
     text: Login View
+- id: hellaamazingrace
+  description: This hella amazing race's gallery
+  imagefolder: photography/hellaamazingrace
+  images:
+  - name: hellaamazingrace-checkpoint.png
+    thumb: hellaamazingrace-checkpoint_tn.jpg
+    text: Checkpoint Dial
+  - name: hellaamazingrace-checkpointvalidation.png
+    thumb: hellaamazingrace-checkpointvalidation_tn.jpg
+    text: Checkpoint Photo Validation
+  - name: hellaamazingrace-map.png
+    thumb: hellaamazingrace-map_tn.jpg
+    text: Map Race
+  - name: hellaamazingrace-mapvalidation.png
+    thumb: hellaamazingrace-mapvalidation_tn.jpg
+    text: Map Race Checkpoint Validation
+  - name: hellaamazingrace-racecreate.png
+    thumb: hellaamazingrace-racecreate_tn.jpg
+    text: Race Create
